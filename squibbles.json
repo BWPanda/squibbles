@@ -161,15 +161,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/backgrounds/background.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/backgrounds/background.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/icons/android-icon-144.png",
         "kind": "image",
         "metadata": "",
@@ -464,6 +455,13 @@
         "name": "assets/sprites/dirt.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "file": "assets/fonts/mini-square.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets/fonts/mini-square.ttf",
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -499,7 +497,12 @@
         "zoomFactor": 0.4
       },
       "objectsGroups": [],
-      "variables": [],
+      "variables": [
+        {
+          "name": "GridSize",
+          "value": "64"
+        }
+      ],
       "instances": [
         {
           "angle": 0,
@@ -2641,7 +2644,7 @@
           "width": 0,
           "x": 0,
           "y": 1088,
-          "zOrder": 2,
+          "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2656,7 +2659,7 @@
           "width": 0,
           "x": 1856,
           "y": 1088,
-          "zOrder": 2,
+          "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2674,7 +2677,12 @@
           "zOrder": 10,
           "numberProperties": [],
           "stringProperties": [],
-          "initialVariables": []
+          "initialVariables": [
+            {
+              "name": "Player",
+              "value": "-1"
+            }
+          ]
         },
         {
           "angle": 0,
@@ -2694,7 +2702,12 @@
             }
           ],
           "stringProperties": [],
-          "initialVariables": []
+          "initialVariables": [
+            {
+              "name": "Player",
+              "value": "1"
+            }
+          ]
         }
       ],
       "objects": [
@@ -2745,6 +2758,120 @@
                     {
                       "hasCustomCollisionMask": false,
                       "image": "assets/sprites/squibble-green.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Block",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets/sprites/block.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Diamond",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets/sprites/diamond.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Mystery",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets/sprites/mystery.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -2889,124 +3016,15 @@
           ]
         },
         {
-          "name": "Block",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "assets/sprites/block.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Diamond",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "assets/sprites/diamond.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Mystery",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "assets/sprites/mystery.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
           "name": "Player",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "name": "Score",
+              "value": "0"
+            }
+          ],
           "behaviors": [],
           "animations": [
             {
@@ -3068,9 +3086,74 @@
               ]
             }
           ]
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "Score",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "0",
+          "font": "assets/fonts/mini-square.ttf",
+          "characterSize": 55,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
         }
       ],
-      "events": [],
+      "events": [
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": true,
+          "name": "Initial setup",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Link",
+              "include": {
+                "includeConfig": 0
+              },
+              "target": "Setup"
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": true,
+          "name": "At each frame...",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Link",
+              "include": {
+                "includeConfig": 0
+              },
+              "target": "Always"
+            }
+          ],
+          "parameters": []
+        }
+      ],
       "layers": [
         {
           "name": "",
@@ -3105,7 +3188,219 @@
       "behaviorsSharedData": []
     }
   ],
-  "externalEvents": [],
+  "externalEvents": [
+    {
+      "associatedLayout": "Game",
+      "lastChangeTimeStamp": 0,
+      "name": "Setup",
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Add scores",
+          "comment2": ""
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Green's score is initially placed off-screen, but it's constantly adjusted automatically anyway",
+              "comment2": ""
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "Player",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Score",
+                    "Player.X() + (Variable(GridSize) * 1.5)",
+                    "Player.Y()",
+                    "\"\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangePlan"
+                  },
+                  "parameters": [
+                    "Score",
+                    "=",
+                    "10"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "LinkedObjects::LinkObjects"
+                  },
+                  "parameters": [
+                    "",
+                    "Player",
+                    "Score"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "associatedLayout": "Game",
+      "lastChangeTimeStamp": 0,
+      "name": "Always",
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Update scores",
+          "comment2": ""
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "Score",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "LinkedObjects::PickObjectsLinkedTo"
+              },
+              "parameters": [
+                "",
+                "Player",
+                "Score"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "Score",
+                "=",
+                "Player.VariableString(Score)"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Adjust Green's score position",
+              "comment2": ""
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "AnimationName"
+                  },
+                  "parameters": [
+                    "Player",
+                    "\"1\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreX"
+                  },
+                  "parameters": [
+                    "Score",
+                    "=",
+                    "(Variable(GridSize) * 28) - Score.Width()"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "eventsFunctionsExtensions": [],
   "externalLayouts": [],
   "externalSourceFiles": []
