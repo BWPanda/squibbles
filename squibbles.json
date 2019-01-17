@@ -501,6 +501,39 @@
         {
           "name": "GridSize",
           "value": "64"
+        },
+        {
+          "name": "Grid",
+          "children": []
+        },
+        {
+          "name": "GridCellsX",
+          "value": "30"
+        },
+        {
+          "name": "GridCellsY",
+          "value": "18"
+        },
+        {
+          "name": "Objects",
+          "children": [
+            {
+              "name": "Arrows",
+              "value": "75"
+            },
+            {
+              "name": "Blocks",
+              "value": "20"
+            },
+            {
+              "name": "Diamonds",
+              "value": "8"
+            },
+            {
+              "name": "Mysteries",
+              "value": "5"
+            }
+          ]
         }
       ],
       "instances": [
@@ -544,7 +577,7 @@
           "width": 0,
           "x": 0,
           "y": 1216,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [
             {
               "name": "animation",
@@ -564,7 +597,7 @@
           "width": 0,
           "x": 0,
           "y": 1152,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -579,7 +612,7 @@
           "width": 0,
           "x": 64,
           "y": 1216,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [
             {
               "name": "animation",
@@ -599,7 +632,7 @@
           "width": 0,
           "x": 64,
           "y": 1152,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -614,7 +647,7 @@
           "width": 0,
           "x": 128,
           "y": 1216,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [
             {
               "name": "animation",
@@ -634,7 +667,7 @@
           "width": 0,
           "x": 128,
           "y": 1152,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -649,7 +682,7 @@
           "width": 0,
           "x": 192,
           "y": 1216,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [
             {
               "name": "animation",
@@ -669,7 +702,7 @@
           "width": 0,
           "x": 192,
           "y": 1152,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -684,7 +717,7 @@
           "width": 0,
           "x": 256,
           "y": 1216,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [
             {
               "name": "animation",
@@ -704,7 +737,7 @@
           "width": 0,
           "x": 256,
           "y": 1152,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -719,7 +752,7 @@
           "width": 0,
           "x": 320,
           "y": 1216,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [
             {
               "name": "animation",
@@ -739,7 +772,7 @@
           "width": 0,
           "x": 320,
           "y": 1152,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -754,7 +787,7 @@
           "width": 0,
           "x": 384,
           "y": 1216,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [
             {
               "name": "animation",
@@ -774,7 +807,7 @@
           "width": 0,
           "x": 384,
           "y": 1152,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -789,7 +822,7 @@
           "width": 0,
           "x": 448,
           "y": 1216,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [
             {
               "name": "animation",
@@ -809,7 +842,7 @@
           "width": 0,
           "x": 448,
           "y": 1152,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -824,7 +857,7 @@
           "width": 0,
           "x": 512,
           "y": 1216,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [
             {
               "name": "animation",
@@ -844,7 +877,7 @@
           "width": 0,
           "x": 512,
           "y": 1152,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -859,7 +892,7 @@
           "width": 0,
           "x": 576,
           "y": 1216,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [
             {
               "name": "animation",
@@ -879,7 +912,7 @@
           "width": 0,
           "x": 576,
           "y": 1152,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -894,7 +927,7 @@
           "width": 0,
           "x": 640,
           "y": 1216,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [
             {
               "name": "animation",
@@ -914,7 +947,7 @@
           "width": 0,
           "x": 640,
           "y": 1152,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -929,7 +962,7 @@
           "width": 0,
           "x": 704,
           "y": 1216,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [
             {
               "name": "animation",
@@ -949,7 +982,7 @@
           "width": 0,
           "x": 704,
           "y": 1152,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -964,7 +997,7 @@
           "width": 0,
           "x": 768,
           "y": 1216,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [
             {
               "name": "animation",
@@ -984,7 +1017,7 @@
           "width": 0,
           "x": 768,
           "y": 1152,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -999,7 +1032,7 @@
           "width": 0,
           "x": 832,
           "y": 1216,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [
             {
               "name": "animation",
@@ -1019,7 +1052,7 @@
           "width": 0,
           "x": 832,
           "y": 1152,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1034,7 +1067,7 @@
           "width": 0,
           "x": 896,
           "y": 1216,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [
             {
               "name": "animation",
@@ -1054,7 +1087,7 @@
           "width": 0,
           "x": 896,
           "y": 1152,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1069,7 +1102,7 @@
           "width": 0,
           "x": 960,
           "y": 1216,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [
             {
               "name": "animation",
@@ -1089,7 +1122,7 @@
           "width": 0,
           "x": 960,
           "y": 1152,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1104,7 +1137,7 @@
           "width": 0,
           "x": 1024,
           "y": 1216,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [
             {
               "name": "animation",
@@ -1124,7 +1157,7 @@
           "width": 0,
           "x": 1024,
           "y": 1152,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1139,7 +1172,7 @@
           "width": 0,
           "x": 1088,
           "y": 1216,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [
             {
               "name": "animation",
@@ -1159,7 +1192,7 @@
           "width": 0,
           "x": 1088,
           "y": 1152,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1174,7 +1207,7 @@
           "width": 0,
           "x": 1152,
           "y": 1216,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [
             {
               "name": "animation",
@@ -1194,7 +1227,7 @@
           "width": 0,
           "x": 1152,
           "y": 1152,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1209,7 +1242,7 @@
           "width": 0,
           "x": 1216,
           "y": 1216,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [
             {
               "name": "animation",
@@ -1229,7 +1262,7 @@
           "width": 0,
           "x": 1216,
           "y": 1152,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1244,7 +1277,7 @@
           "width": 0,
           "x": 1280,
           "y": 1216,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [
             {
               "name": "animation",
@@ -1264,7 +1297,7 @@
           "width": 0,
           "x": 1280,
           "y": 1152,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1279,7 +1312,7 @@
           "width": 0,
           "x": 1344,
           "y": 1216,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [
             {
               "name": "animation",
@@ -1299,7 +1332,7 @@
           "width": 0,
           "x": 1344,
           "y": 1152,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1314,7 +1347,7 @@
           "width": 0,
           "x": 1408,
           "y": 1216,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [
             {
               "name": "animation",
@@ -1334,7 +1367,7 @@
           "width": 0,
           "x": 1408,
           "y": 1152,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1349,7 +1382,7 @@
           "width": 0,
           "x": 1472,
           "y": 1216,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [
             {
               "name": "animation",
@@ -1369,7 +1402,7 @@
           "width": 0,
           "x": 1472,
           "y": 1152,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1384,7 +1417,7 @@
           "width": 0,
           "x": 1536,
           "y": 1216,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [
             {
               "name": "animation",
@@ -1404,7 +1437,7 @@
           "width": 0,
           "x": 1536,
           "y": 1152,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1419,7 +1452,7 @@
           "width": 0,
           "x": 1600,
           "y": 1216,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [
             {
               "name": "animation",
@@ -1439,7 +1472,7 @@
           "width": 0,
           "x": 1600,
           "y": 1152,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1454,7 +1487,7 @@
           "width": 0,
           "x": 1664,
           "y": 1216,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [
             {
               "name": "animation",
@@ -1474,7 +1507,7 @@
           "width": 0,
           "x": 1664,
           "y": 1152,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1489,7 +1522,7 @@
           "width": 0,
           "x": 1728,
           "y": 1216,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [
             {
               "name": "animation",
@@ -1509,7 +1542,7 @@
           "width": 0,
           "x": 1728,
           "y": 1152,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1524,7 +1557,7 @@
           "width": 0,
           "x": 1792,
           "y": 1216,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [
             {
               "name": "animation",
@@ -1544,7 +1577,7 @@
           "width": 0,
           "x": 1792,
           "y": 1152,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1559,7 +1592,7 @@
           "width": 0,
           "x": 1856,
           "y": 1216,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [
             {
               "name": "animation",
@@ -1579,7 +1612,7 @@
           "width": 0,
           "x": 1856,
           "y": 1152,
-          "zOrder": 1,
+          "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2644,7 +2677,7 @@
           "width": 0,
           "x": 0,
           "y": 1088,
-          "zOrder": 1,
+          "zOrder": 6,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2659,7 +2692,7 @@
           "width": 0,
           "x": 1856,
           "y": 1088,
-          "zOrder": 1,
+          "zOrder": 6,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2758,6 +2791,141 @@
                     {
                       "hasCustomCollisionMask": false,
                       "image": "assets/sprites/squibble-green.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Arrow",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "-1",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.2,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets/sprites/arrow-right.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets/sprites/arrow-down.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets/sprites/arrow-left.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "1",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.2,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets/sprites/arrow-left.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets/sprites/arrow-down.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets/sprites/arrow-right.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -2894,8 +3062,8 @@
         },
         {
           "height": 640,
-          "name": "BackgroundBottom",
-          "texture": "assets/backgrounds/background-bottom.png",
+          "name": "BackgroundTop",
+          "texture": "assets/backgrounds/background-top.png",
           "type": "TiledSpriteObject::TiledSprite",
           "width": 1280,
           "variables": [],
@@ -2903,8 +3071,8 @@
         },
         {
           "height": 640,
-          "name": "BackgroundTop",
-          "texture": "assets/backgrounds/background-top.png",
+          "name": "BackgroundBottom",
+          "texture": "assets/backgrounds/background-bottom.png",
           "type": "TiledSpriteObject::TiledSprite",
           "width": 1280,
           "variables": [],
@@ -3206,12 +3374,497 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Add scores",
+          "comment": "Create grid",
+          "comment2": ""
+        },
+        {
+          "disabled": false,
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "i",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Repeat",
+              "repeatExpression": "Variable(GridCellsX)",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "j",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Repeat",
+                  "repeatExpression": "Variable(GridCellsY)",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "Grid[ToString(Variable(i) + 1)][ToString(Variable(j) + 1)].X",
+                        "=",
+                        "Variable(i)*Variable(GridSize)"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "Grid[ToString(Variable(i) + 1)][ToString(Variable(j) + 1)].Y",
+                        "=",
+                        "Variable(j)*Variable(GridSize)"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarSceneTxt"
+                      },
+                      "parameters": [
+                        "Grid[ToString(Variable(i) + 1)][ToString(Variable(j) + 1)].Object",
+                        "=",
+                        "\"\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "j",
+                        "+",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "i",
+                        "+",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Add blocks",
+          "comment2": ""
+        },
+        {
+          "disabled": false,
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "infiniteLoopWarning": true,
+              "type": "BuiltinCommonInstructions::While",
+              "whileConditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "Objects.Blocks",
+                    ">",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "i",
+                    "=",
+                    "RandomInRange(1, Variable(GridCellsX))"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "j",
+                    "=",
+                    "RandomInRange(3, Variable(GridCellsY) - 1)"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarSceneTxt"
+                      },
+                      "parameters": [
+                        "Grid[VariableString(i)][VariableString(j)].Object",
+                        "=",
+                        "\"\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "Block",
+                        "Variable(Grid[VariableString(i)][VariableString(j)].X)",
+                        "Variable(Grid[VariableString(i)][VariableString(j)].Y)",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ChangePlan"
+                      },
+                      "parameters": [
+                        "Block",
+                        "=",
+                        "6"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarSceneTxt"
+                      },
+                      "parameters": [
+                        "Grid[VariableString(i)][VariableString(j)].Object",
+                        "=",
+                        "\"block\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "Objects.Blocks",
+                        "-",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Add arrows",
           "comment2": ""
         },
         {
           "disabled": false,
           "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "infiniteLoopWarning": true,
+              "type": "BuiltinCommonInstructions::While",
+              "whileConditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "Objects.Arrows",
+                    ">",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "i",
+                    "=",
+                    "RandomInRange(1, Variable(GridCellsX))"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "j",
+                    "=",
+                    "RandomInRange(3, Variable(GridCellsY) - 1)"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarSceneTxt"
+                      },
+                      "parameters": [
+                        "Grid[VariableString(i)][VariableString(j)].Object",
+                        "=",
+                        "\"\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "Arrow",
+                        "Variable(Grid[VariableString(i)][VariableString(j)].X)",
+                        "Variable(Grid[VariableString(i)][VariableString(j)].Y)",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ChangePlan"
+                      },
+                      "parameters": [
+                        "Arrow",
+                        "=",
+                        "6"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetAnimationName"
+                      },
+                      "parameters": [
+                        "Arrow",
+                        "ToString(RandomWithStep(-1, 1, 2))"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ChangeSprite"
+                      },
+                      "parameters": [
+                        "Arrow",
+                        "=",
+                        "2"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarSceneTxt"
+                      },
+                      "parameters": [
+                        "Grid[VariableString(i)][VariableString(j)].Object",
+                        "=",
+                        "\"arrow\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "Objects.Arrows",
+                        "-",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Display scores",
+          "comment2": ""
+        },
+        {
+          "disabled": false,
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -3239,7 +3892,7 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "Green's score is initially placed off-screen, but it's constantly adjusted automatically anyway",
+              "comment": "Green's score is initially placed off-screen, but it's automatically adjusted each frame",
               "comment2": ""
             },
             {
