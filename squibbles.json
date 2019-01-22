@@ -544,7 +544,7 @@
               "value": "20"
             },
             {
-              "name": "Diamonds",
+              "name": "Coins",
               "value": "8"
             },
             {
@@ -3299,7 +3299,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "name": "Initial setup",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -3322,7 +3322,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "name": "At each frame...",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -3877,7 +3877,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Add diamonds",
+          "comment": "Add coins",
           "comment2": ""
         },
         {
@@ -3910,7 +3910,7 @@
                     "value": "VarScene"
                   },
                   "parameters": [
-                    "Objects.Diamonds",
+                    "Objects.Coins",
                     ">",
                     "0"
                   ],
@@ -3998,7 +3998,7 @@
                       "parameters": [
                         "Grid[VariableString(i)][VariableString(j)].Object",
                         "=",
-                        "\"diamond\""
+                        "\"coin\""
                       ],
                       "subInstructions": []
                     },
@@ -4008,7 +4008,7 @@
                         "value": "ModVarScene"
                       },
                       "parameters": [
-                        "Objects.Diamonds",
+                        "Objects.Coins",
                         "-",
                         "1"
                       ],
@@ -4038,7 +4038,7 @@
         },
         {
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
