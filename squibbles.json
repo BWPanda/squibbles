@@ -161,12 +161,100 @@
       },
       {
         "alwaysLoaded": false,
+        "file": "assets/sprites/arrow-down.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/arrow-down.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/arrow-left.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/arrow-left.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/arrow-right.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/arrow-right.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/block.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/block.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/exit.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/exit.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/grass.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/grass.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/mystery.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/mystery.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/dirt.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/dirt.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/fonts/mini-square.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets/fonts/mini-square.ttf",
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/coin.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/coin.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
         "file": "assets/icons/android-icon-144.png",
         "kind": "image",
         "metadata": "",
         "name": "assets/icons/android-icon-144.png",
         "smoothed": true,
-        "userAdded": false
+        "userAdded": true
       },
       {
         "alwaysLoaded": false,
@@ -368,100 +456,30 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/icons/squibble.png",
+        "file": "assets/sprites/squibble-blue.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets/icons/squibble.png",
+        "name": "assets/sprites/squibble-blue.png",
         "smoothed": true,
         "userAdded": false
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/sprites/arrow-down.png",
+        "file": "assets/sprites/squibble-purple.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets/sprites/arrow-down.png",
+        "name": "assets/sprites/squibble-purple.png",
         "smoothed": true,
         "userAdded": false
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/sprites/arrow-left.png",
+        "file": "assets/sprites/squibble-yellow.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets/sprites/arrow-left.png",
+        "name": "assets/sprites/squibble-yellow.png",
         "smoothed": true,
         "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/sprites/arrow-right.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/sprites/arrow-right.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/sprites/block.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/sprites/block.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/sprites/diamond.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/sprites/diamond.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/sprites/exit.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/sprites/exit.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/sprites/grass.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/sprites/grass.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/sprites/mystery.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/sprites/mystery.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/sprites/dirt.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/sprites/dirt.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/fonts/mini-square.ttf",
-        "kind": "font",
-        "metadata": "",
-        "name": "assets/fonts/mini-square.ttf",
-        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -2985,7 +3003,7 @@
           ]
         },
         {
-          "name": "Diamond",
+          "name": "Coin",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
@@ -3001,7 +3019,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "assets/sprites/diamond.png",
+                      "image": "assets/sprites/coin.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -3685,7 +3703,7 @@
         },
         {
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -3835,6 +3853,318 @@
                       },
                       "parameters": [
                         "Objects.Arrows",
+                        "-",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Add diamonds",
+          "comment2": ""
+        },
+        {
+          "disabled": false,
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "infiniteLoopWarning": true,
+              "type": "BuiltinCommonInstructions::While",
+              "whileConditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "Objects.Diamonds",
+                    ">",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "i",
+                    "=",
+                    "RandomInRange(1, Variable(GridCellsX))"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "j",
+                    "=",
+                    "RandomInRange(3, Variable(GridCellsY) - 1)"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarSceneTxt"
+                      },
+                      "parameters": [
+                        "Grid[VariableString(i)][VariableString(j)].Object",
+                        "=",
+                        "\"\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "Coin",
+                        "Variable(Grid[VariableString(i)][VariableString(j)].X)",
+                        "Variable(Grid[VariableString(i)][VariableString(j)].Y)",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ChangePlan"
+                      },
+                      "parameters": [
+                        "Coin",
+                        "=",
+                        "6"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarSceneTxt"
+                      },
+                      "parameters": [
+                        "Grid[VariableString(i)][VariableString(j)].Object",
+                        "=",
+                        "\"diamond\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "Objects.Diamonds",
+                        "-",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Add mysteries",
+          "comment2": ""
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "infiniteLoopWarning": true,
+              "type": "BuiltinCommonInstructions::While",
+              "whileConditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "Objects.Mysteries",
+                    ">",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "i",
+                    "=",
+                    "RandomInRange(1, Variable(GridCellsX))"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "j",
+                    "=",
+                    "RandomInRange(3, Variable(GridCellsY) - 1)"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarSceneTxt"
+                      },
+                      "parameters": [
+                        "Grid[VariableString(i)][VariableString(j)].Object",
+                        "=",
+                        "\"\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "Mystery",
+                        "Variable(Grid[VariableString(i)][VariableString(j)].X)",
+                        "Variable(Grid[VariableString(i)][VariableString(j)].Y)",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ChangePlan"
+                      },
+                      "parameters": [
+                        "Mystery",
+                        "=",
+                        "6"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarSceneTxt"
+                      },
+                      "parameters": [
+                        "Grid[VariableString(i)][VariableString(j)].Object",
+                        "=",
+                        "\"mystery\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "Objects.Mysteries",
                         "-",
                         "1"
                       ],
