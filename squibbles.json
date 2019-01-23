@@ -480,14 +480,612 @@
         "name": "assets/sprites/squibble-yellow.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/fonts/luckiest-guy.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets/fonts/luckiest-guy.ttf",
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/title.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/title.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
   },
-  "objects": [],
+  "objects": [
+    {
+      "height": 640,
+      "name": "BackgroundTop",
+      "texture": "assets/backgrounds/background-top.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 1280,
+      "variables": [],
+      "behaviors": []
+    },
+    {
+      "height": 640,
+      "name": "BackgroundBottom",
+      "texture": "assets/backgrounds/background-bottom.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 1280,
+      "variables": [],
+      "behaviors": []
+    },
+    {
+      "name": "Purple",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets/sprites/squibble-purple.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Yellow",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets/sprites/squibble-yellow.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Blue",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets/sprites/squibble-blue.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Green",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets/sprites/squibble-green.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pink",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets/sprites/squibble-pink.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "objectsGroups": [],
-  "variables": [],
+  "variables": [
+    {
+      "name": "Player1",
+      "value": ""
+    },
+    {
+      "name": "Player2",
+      "value": ""
+    }
+  ],
   "layouts": [
+    {
+      "b": 209,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "Title",
+      "name": "Title",
+      "oglFOV": 90,
+      "oglZFar": 500,
+      "oglZNear": 1,
+      "r": 209,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 209,
+      "uiSettings": {
+        "grid": true,
+        "gridB": 255,
+        "gridG": 180,
+        "gridHeight": 64,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridR": 158,
+        "gridWidth": 64,
+        "snap": true,
+        "windowMask": false,
+        "zoomFactor": 0.4
+      },
+      "objectsGroups": [],
+      "variables": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 640,
+          "layer": "",
+          "locked": true,
+          "name": "BackgroundTop",
+          "width": 1920,
+          "x": 0,
+          "y": 0,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 640,
+          "layer": "",
+          "locked": true,
+          "name": "BackgroundBottom",
+          "width": 1920,
+          "x": 0,
+          "y": 640,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Title",
+          "width": 0,
+          "x": 320,
+          "y": 192,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "name": "Title",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets/sprites/title.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Alignment::Center"
+              },
+              "parameters": [
+                "",
+                "Title",
+                "SceneWindowWidth() / 2",
+                "Title.Y() + (Title.Height() / 2)",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        }
+      ],
+      "layers": [
+        {
+          "name": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": []
+        }
+      ],
+      "behaviorsSharedData": []
+    },
+    {
+      "b": 209,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "ChooseSquibble",
+      "name": "ChooseSquibble",
+      "oglFOV": 90,
+      "oglZFar": 500,
+      "oglZNear": 1,
+      "r": 209,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 209,
+      "uiSettings": {
+        "grid": true,
+        "gridB": 255,
+        "gridG": 180,
+        "gridHeight": 64,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridR": 158,
+        "gridWidth": 64,
+        "snap": true,
+        "windowMask": false,
+        "zoomFactor": 0.4
+      },
+      "objectsGroups": [],
+      "variables": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 640,
+          "layer": "",
+          "locked": true,
+          "name": "BackgroundTop",
+          "width": 1920,
+          "x": 0,
+          "y": 0,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 640,
+          "layer": "",
+          "locked": true,
+          "name": "BackgroundBottom",
+          "width": 1920,
+          "x": 0,
+          "y": 640,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 128,
+          "layer": "",
+          "locked": false,
+          "name": "Green",
+          "width": 128,
+          "x": 640,
+          "y": 576,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 128,
+          "layer": "",
+          "locked": false,
+          "name": "Blue",
+          "width": 128,
+          "x": 896,
+          "y": 576,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 128,
+          "layer": "",
+          "locked": false,
+          "name": "Yellow",
+          "width": 128,
+          "x": 1152,
+          "y": 576,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 128,
+          "layer": "",
+          "locked": false,
+          "name": "Purple",
+          "width": 128,
+          "x": 1408,
+          "y": 576,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 128,
+          "layer": "",
+          "locked": false,
+          "name": "Pink",
+          "width": 128,
+          "x": 384,
+          "y": 576,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Text",
+          "width": 0,
+          "x": 640,
+          "y": 128,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "bold": false,
+          "italic": false,
+          "name": "Text",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Choose your Squibble",
+          "font": "assets/fonts/luckiest-guy.ttf",
+          "characterSize": 55,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        }
+      ],
+      "events": [],
+      "layers": [
+        {
+          "name": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": []
+        }
+      ],
+      "behaviorsSharedData": []
+    },
     {
       "b": 209,
       "disableInputWhenNotFocused": true,
@@ -610,7 +1208,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:-1",
+          "layer": "Player1",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -625,7 +1223,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:-1",
+          "layer": "Player1",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -640,7 +1238,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:-1",
+          "layer": "Player1",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -655,7 +1253,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:-1",
+          "layer": "Player1",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -670,7 +1268,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:-1",
+          "layer": "Player1",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -685,7 +1283,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:-1",
+          "layer": "Player1",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -700,7 +1298,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:-1",
+          "layer": "Player1",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -715,7 +1313,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:-1",
+          "layer": "Player1",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -730,7 +1328,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:-1",
+          "layer": "Player1",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -745,7 +1343,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:-1",
+          "layer": "Player1",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -760,7 +1358,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:-1",
+          "layer": "Player1",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -775,7 +1373,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:-1",
+          "layer": "Player1",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -790,7 +1388,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:-1",
+          "layer": "Player1",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -805,7 +1403,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:-1",
+          "layer": "Player1",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -820,7 +1418,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:-1",
+          "layer": "Player1",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -835,7 +1433,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:-1",
+          "layer": "Player1",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -850,7 +1448,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:-1",
+          "layer": "Player1",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -865,7 +1463,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:-1",
+          "layer": "Player1",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -880,7 +1478,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:-1",
+          "layer": "Player1",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -895,7 +1493,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:-1",
+          "layer": "Player1",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -910,7 +1508,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:-1",
+          "layer": "Player1",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -925,7 +1523,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:-1",
+          "layer": "Player1",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -940,7 +1538,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:-1",
+          "layer": "Player1",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -955,7 +1553,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:-1",
+          "layer": "Player1",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -970,7 +1568,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:-1",
+          "layer": "Player1",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -985,7 +1583,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:-1",
+          "layer": "Player1",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -1000,7 +1598,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:-1",
+          "layer": "Player1",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -1015,7 +1613,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:-1",
+          "layer": "Player1",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -1030,7 +1628,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:-1",
+          "layer": "Player1",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -1045,7 +1643,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:-1",
+          "layer": "Player1",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -1060,7 +1658,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:1",
+          "layer": "Player2",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -1080,7 +1678,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:1",
+          "layer": "Player2",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -1100,7 +1698,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:1",
+          "layer": "Player2",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -1120,7 +1718,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:1",
+          "layer": "Player2",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -1140,7 +1738,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:1",
+          "layer": "Player2",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -1160,7 +1758,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:1",
+          "layer": "Player2",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -1180,7 +1778,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:1",
+          "layer": "Player2",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -1200,7 +1798,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:1",
+          "layer": "Player2",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -1220,7 +1818,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:1",
+          "layer": "Player2",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -1240,7 +1838,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:1",
+          "layer": "Player2",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -1260,7 +1858,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:1",
+          "layer": "Player2",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -1280,7 +1878,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:1",
+          "layer": "Player2",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -1300,7 +1898,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:1",
+          "layer": "Player2",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -1320,7 +1918,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:1",
+          "layer": "Player2",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -1340,7 +1938,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:1",
+          "layer": "Player2",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -1360,7 +1958,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:1",
+          "layer": "Player2",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -1380,7 +1978,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:1",
+          "layer": "Player2",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -1400,7 +1998,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:1",
+          "layer": "Player2",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -1420,7 +2018,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:1",
+          "layer": "Player2",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -1440,7 +2038,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:1",
+          "layer": "Player2",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -1460,7 +2058,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:1",
+          "layer": "Player2",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -1480,7 +2078,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:1",
+          "layer": "Player2",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -1500,7 +2098,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:1",
+          "layer": "Player2",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -1520,7 +2118,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:1",
+          "layer": "Player2",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -1540,7 +2138,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:1",
+          "layer": "Player2",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -1560,7 +2158,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:1",
+          "layer": "Player2",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -1580,7 +2178,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:1",
+          "layer": "Player2",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -1600,7 +2198,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:1",
+          "layer": "Player2",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -1620,7 +2218,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:1",
+          "layer": "Player2",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -1640,7 +2238,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player:1",
+          "layer": "Player2",
           "locked": false,
           "name": "Pink",
           "width": 0,
@@ -1763,196 +2361,6 @@
         }
       ],
       "objects": [
-        {
-          "name": "Purple",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "assets/sprites/squibble-purple.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Yellow",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "assets/sprites/squibble-yellow.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Blue",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "assets/sprites/squibble-blue.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Green",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "assets/sprites/squibble-green.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Pink",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "assets/sprites/squibble-pink.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
         {
           "name": "Arrow",
           "type": "Sprite",
@@ -2203,24 +2611,6 @@
           ]
         },
         {
-          "height": 640,
-          "name": "BackgroundTop",
-          "texture": "assets/backgrounds/background-top.png",
-          "type": "TiledSpriteObject::TiledSprite",
-          "width": 1280,
-          "variables": [],
-          "behaviors": []
-        },
-        {
-          "height": 640,
-          "name": "BackgroundBottom",
-          "texture": "assets/backgrounds/background-bottom.png",
-          "type": "TiledSpriteObject::TiledSprite",
-          "width": 1280,
-          "variables": [],
-          "behaviors": []
-        },
-        {
           "name": "Exit",
           "type": "Sprite",
           "updateIfNotVisible": false,
@@ -2434,13 +2824,13 @@
           "effects": []
         },
         {
-          "name": "Player:-1",
+          "name": "Player1",
           "visibility": true,
           "cameras": [],
           "effects": []
         },
         {
-          "name": "Player:1",
+          "name": "Player2",
           "visibility": true,
           "cameras": [],
           "effects": []
@@ -3459,7 +3849,78 @@
       ]
     }
   ],
-  "eventsFunctionsExtensions": [],
+  "eventsFunctionsExtensions": [
+    {
+      "description": "",
+      "extensionNamespace": "",
+      "fullName": "",
+      "name": "Alignment",
+      "version": "",
+      "eventsFunctions": [
+        {
+          "description": "Center an object at a given position.",
+          "fullName": "Center an object",
+          "functionType": "Action",
+          "name": "Center",
+          "sentence": "Center _PARAM1_ at position _PARAM2_; _PARAM3_",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "Object",
+                    "=",
+                    "GetArgumentAsNumber(\"XPosition\") - (Object.Width() / 2)",
+                    "=",
+                    "GetArgumentAsNumber(\"YPosition\") - (Object.Height() / 2)"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": [
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "Object",
+              "name": "Object",
+              "optional": false,
+              "supplementaryInformation": "",
+              "type": "objectList"
+            },
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "X position",
+              "name": "XPosition",
+              "optional": false,
+              "supplementaryInformation": "",
+              "type": "expression"
+            },
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "Y position",
+              "name": "YPosition",
+              "optional": false,
+              "supplementaryInformation": "",
+              "type": "expression"
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "externalLayouts": [],
   "externalSourceFiles": []
 }
