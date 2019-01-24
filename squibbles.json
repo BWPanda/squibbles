@@ -514,6 +514,24 @@
         "name": "assets/sprites/player-2.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/player-1-active.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/player-1-active.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/player-2-active.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/player-2-active.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -731,11 +749,15 @@
   "objectsGroups": [],
   "variables": [
     {
-      "name": "Player1",
+      "name": "player_1_squibble",
       "value": ""
     },
     {
-      "name": "Player2",
+      "name": "player_2_squibble",
+      "value": ""
+    },
+    {
+      "name": "players",
       "value": ""
     }
   ],
@@ -766,7 +788,19 @@
         "windowMask": false,
         "zoomFactor": 0.4
       },
-      "objectsGroups": [],
+      "objectsGroups": [
+        {
+          "name": "Buttons",
+          "objects": [
+            {
+              "name": "Button1Player"
+            },
+            {
+              "name": "Button2Players"
+            }
+          ]
+        }
+      ],
       "variables": [],
       "instances": [
         {
@@ -888,11 +922,16 @@
           "name": "Button1Player",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "name": "players",
+              "value": "1"
+            }
+          ],
           "behaviors": [],
           "animations": [
             {
-              "name": "",
+              "name": "Default",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -919,6 +958,35 @@
                   ]
                 }
               ]
+            },
+            {
+              "name": "Active",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets/sprites/player-1-active.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -926,11 +994,16 @@
           "name": "Button2Players",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "name": "players",
+              "value": "2"
+            }
+          ],
           "behaviors": [],
           "animations": [
             {
-              "name": "",
+              "name": "Default",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -957,11 +1030,55 @@
                   ]
                 }
               ]
+            },
+            {
+              "name": "Active",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets/sprites/player-2-active.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
       ],
       "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Center the title",
+          "comment2": ""
+        },
         {
           "disabled": false,
           "folded": false,
@@ -989,6 +1106,174 @@
                 "Title",
                 "SceneWindowWidth() / 2",
                 "Title.Y() + (Title.Height() / 2)",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Button actions",
+          "comment2": ""
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "PauseTimer"
+              },
+              "parameters": [
+                "",
+                "\"ChangeScene\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetAnimationName"
+              },
+              "parameters": [
+                "Buttons",
+                "\"Default\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisBouton"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Buttons",
+                "Left",
+                "yes",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetAnimationName"
+              },
+              "parameters": [
+                "Buttons",
+                "\"Active\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "players",
+                "=",
+                "Buttons.Variable(players)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "UnPauseTimer"
+              },
+              "parameters": [
+                "",
+                "\"ChangeScene\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Timer"
+              },
+              "parameters": [
+                "",
+                "0.1",
+                "\"ChangeScene\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"ChooseSquibble\"",
                 ""
               ],
               "subInstructions": []
