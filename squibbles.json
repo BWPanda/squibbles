@@ -763,6 +763,14 @@
     {
       "name": "grid_size",
       "value": "64"
+    },
+    {
+      "name": "grid_cells_x",
+      "value": "30"
+    },
+    {
+      "name": "grid_cells_y",
+      "value": "18"
     }
   ],
   "layouts": [
@@ -2058,7 +2066,7 @@
                   },
                   "parameters": [
                     "",
-                    "2",
+                    "1.5",
                     "\"Delay\""
                   ],
                   "subInstructions": []
@@ -2359,1056 +2367,6 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Player1",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 448,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player1",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 0,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player1",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 64,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player1",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 128,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player1",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 192,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player1",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 256,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player1",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 320,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player1",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 384,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player1",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 960,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player1",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 512,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player1",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 576,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player1",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 640,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player1",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 704,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player1",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 768,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player1",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 832,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player1",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 896,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player1",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 1472,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player1",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 1024,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player1",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 1088,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player1",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 1152,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player1",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 1216,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player1",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 1280,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player1",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 1344,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player1",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 1408,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player1",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 1536,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player1",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 1600,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player1",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 1664,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player1",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 1728,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player1",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 1792,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player1",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 1856,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player2",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 448,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player2",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 0,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player2",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 64,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player2",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 128,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player2",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 192,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player2",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 256,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player2",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 320,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player2",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 384,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player2",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 960,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player2",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 512,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player2",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 576,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player2",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 640,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player2",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 704,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player2",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 768,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player2",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 832,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player2",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 896,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player2",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 1472,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player2",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 1024,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player2",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 1088,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player2",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 1152,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player2",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 1216,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player2",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 1280,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player2",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 1344,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player2",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 1408,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player2",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 1536,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player2",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 1600,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player2",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 1664,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player2",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 1728,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player2",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 1792,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Player2",
-          "locked": false,
-          "name": "Pink",
-          "width": 0,
-          "x": 1856,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
           "layer": "",
           "locked": false,
           "name": "Exit",
@@ -3416,42 +2374,12 @@
           "x": 0,
           "y": 1088,
           "zOrder": 6,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Exit",
-          "width": 0,
-          "x": 1856,
-          "y": 1088,
-          "zOrder": 6,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Player",
-          "width": 0,
-          "x": 32,
-          "y": 1194,
-          "zOrder": 10,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": [
             {
-              "name": "Player",
-              "value": "-1"
+              "name": "player",
+              "value": "1"
             }
           ]
         },
@@ -3461,22 +2389,17 @@
           "height": 0,
           "layer": "",
           "locked": false,
-          "name": "Player",
+          "name": "Exit",
           "width": 0,
-          "x": 1824,
-          "y": 1194,
-          "zOrder": 10,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
+          "x": 1856,
+          "y": 1088,
+          "zOrder": 6,
+          "numberProperties": [],
           "stringProperties": [],
           "initialVariables": [
             {
-              "name": "Player",
-              "value": "1"
+              "name": "player",
+              "value": "2"
             }
           ]
         },
@@ -3765,7 +2688,12 @@
           "name": "Exit",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "name": "player",
+              "value": ""
+            }
+          ],
           "behaviors": [],
           "animations": [
             {
@@ -3830,7 +2758,7 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "-1",
+              "name": "Pink",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -3859,7 +2787,7 @@
               ]
             },
             {
-              "name": "1",
+              "name": "Green",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -3869,6 +2797,93 @@
                     {
                       "hasCustomCollisionMask": false,
                       "image": "assets/sprites/squibble-green.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Blue",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets/sprites/squibble-blue.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Yellow",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets/sprites/squibble-yellow.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Purple",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets/sprites/squibble-purple.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -3915,7 +2930,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "Initial setup",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -3946,11 +2961,101 @@
             {
               "disabled": false,
               "folded": false,
-              "type": "BuiltinCommonInstructions::Link",
-              "include": {
-                "includeConfig": 0
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
               },
-              "target": "Always"
+              "comment": "Update scores",
+              "comment2": ""
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "Score",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "LinkedObjects::PickObjectsLinkedTo"
+                  },
+                  "parameters": [
+                    "",
+                    "Player",
+                    "Score"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "Score",
+                    "=",
+                    "Player.VariableString(Score)"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Adjust Player 2's score position",
+                  "comment2": ""
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "AnimationName"
+                      },
+                      "parameters": [
+                        "Player",
+                        "GlobalVariableString(player_2_squibble)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "MettreX"
+                      },
+                      "parameters": [
+                        "Score",
+                        "=",
+                        "(28 * Variable(GridSize)) - Score.Width()"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
             }
           ],
           "parameters": []
@@ -4805,7 +3910,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Display scores",
+          "comment": "Add player icons",
           "comment2": ""
         },
         {
@@ -4838,9 +3943,151 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "Green's score is initially placed off-screen, but it's automatically adjusted each frame",
+              "comment": "Player 1",
               "comment2": ""
             },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Player",
+                    "0.5 * GlobalVariable(grid_size)",
+                    "(18.5 * GlobalVariable(grid_size)) + 10",
+                    "\"\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "Player",
+                    "GlobalVariableString(player_1_squibble)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangePlan"
+                  },
+                  "parameters": [
+                    "Player",
+                    "=",
+                    "10"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Player 2",
+              "comment2": ""
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Player",
+                    "28.5 * GlobalVariable(grid_size)",
+                    "(18.5 * GlobalVariable(grid_size)) + 10",
+                    "\"\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "Player",
+                    "GlobalVariableString(player_2_squibble)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangePlan"
+                  },
+                  "parameters": [
+                    "Player",
+                    "=",
+                    "10"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Add scores",
+          "comment2": ""
+        },
+        {
+          "disabled": false,
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [],
+          "events": [
             {
               "disabled": false,
               "folded": false,
@@ -4856,7 +4103,7 @@
                   "parameters": [
                     "",
                     "Score",
-                    "Player.X() + (Variable(GridSize) * 1.5)",
+                    "Player.X() + (1.5 * Variable(GridSize))",
                     "Player.Y()",
                     "\"\""
                   ],
@@ -4888,65 +4135,7 @@
                 }
               ],
               "events": []
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "associatedLayout": "Game",
-      "lastChangeTimeStamp": 0,
-      "name": "Always",
-      "events": [
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "Update scores",
-          "comment2": ""
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::ForEach",
-          "object": "Score",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "LinkedObjects::PickObjectsLinkedTo"
-              },
-              "parameters": [
-                "",
-                "Player",
-                "Score"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "TextObject::String"
-              },
-              "parameters": [
-                "Score",
-                "=",
-                "Player.VariableString(Score)"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": [
+            },
             {
               "disabled": false,
               "folded": false,
@@ -4959,36 +4148,103 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "Adjust Green's score position",
+              "comment": "Player 2's score is initially placed off-screen, but it's automatically positioned each frame anyway",
               "comment2": ""
-            },
+            }
+          ]
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Add squibbles",
+          "comment2": ""
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "i",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": [
             {
               "disabled": false,
               "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "AnimationName"
-                  },
-                  "parameters": [
-                    "Player",
-                    "\"1\""
-                  ],
-                  "subInstructions": []
-                }
-              ],
+              "type": "BuiltinCommonInstructions::Repeat",
+              "repeatExpression": "GlobalVariable(grid_cells_x)",
+              "conditions": [],
               "actions": [
                 {
                   "type": {
                     "inverted": false,
-                    "value": "MettreX"
+                    "value": "CreateByName"
                   },
                   "parameters": [
-                    "Score",
-                    "=",
-                    "(Variable(GridSize) * 28) - Score.Width()"
+                    "",
+                    "Squibbles",
+                    "GlobalVariableString(player_1_squibble)",
+                    "Variable(i)",
+                    "0",
+                    "\"Player1\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CreateByName"
+                  },
+                  "parameters": [
+                    "",
+                    "Squibbles",
+                    "GlobalVariableString(player_2_squibble)",
+                    "Variable(i)",
+                    "0",
+                    "\"Player2\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "i",
+                    "+",
+                    "GlobalVariable(grid_size)"
                   ],
                   "subInstructions": []
                 }
