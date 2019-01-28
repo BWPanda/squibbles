@@ -532,6 +532,15 @@
         "name": "assets/sprites/player-2-active.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/backgrounds/overlay.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/backgrounds/overlay.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1720,6 +1729,18 @@
                     ""
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Opacity"
+                  },
+                  "parameters": [
+                    "Squibbles",
+                    "=",
+                    "255"
+                  ],
+                  "subInstructions": []
                 }
               ],
               "actions": [
@@ -2289,6 +2310,23 @@
             },
             {
               "name": "Pink"
+            }
+          ]
+        },
+        {
+          "name": "Rounds",
+          "objects": [
+            {
+              "name": "BackgroundOverlay"
+            },
+            {
+              "name": "RoundsTitle"
+            },
+            {
+              "name": "Rounds1"
+            },
+            {
+              "name": "Rounds3"
             }
           ]
         }
@@ -2909,6 +2947,69 @@
             "g": 255,
             "r": 255
           }
+        },
+        {
+          "height": 64,
+          "name": "BackgroundOverlay",
+          "texture": "assets/backgrounds/overlay.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 64,
+          "variables": [],
+          "behaviors": []
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "RoundsTitle",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "How many rounds would you like to play?",
+          "font": "assets/fonts/luckiest-guy.ttf",
+          "characterSize": 60,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "Rounds1",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "One round",
+          "font": "assets/fonts/luckiest-guy.ttf",
+          "characterSize": 80,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "Rounds3",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Three rounds",
+          "font": "assets/fonts/luckiest-guy.ttf",
+          "characterSize": 80,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
         }
       ],
       "events": [
@@ -2936,13 +3037,71 @@
           "parameters": []
         },
         {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+              },
+              "parameters": [
+                "",
+                "\"Rounds\"",
+                "0",
+                "0"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "Rounds",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Alignment::Center"
+                  },
+                  "parameters": [
+                    "",
+                    "Rounds",
+                    "SceneWindowWidth() / 2",
+                    "Rounds.Y() + (Rounds.Height() / 2)",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
+        },
+        {
           "colorB": 228,
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
           "folded": false,
-          "name": "At each frame...",
+          "name": "TODO: Move these events to wherever scores are updated",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
@@ -2962,7 +3121,7 @@
               "comment2": ""
             },
             {
-              "disabled": false,
+              "disabled": true,
               "folded": false,
               "type": "BuiltinCommonInstructions::ForEach",
               "object": "Score",
@@ -3076,6 +3235,12 @@
         },
         {
           "name": "Player2",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        },
+        {
+          "name": "Overlay",
           "visibility": true,
           "cameras": [],
           "effects": []
@@ -3904,7 +4069,7 @@
         },
         {
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -4061,7 +4226,7 @@
         },
         {
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -4123,22 +4288,42 @@
                   "subInstructions": []
                 }
               ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Comment",
-              "color": {
-                "b": 109,
-                "g": 230,
-                "r": 255,
-                "textB": 0,
-                "textG": 0,
-                "textR": 0
-              },
-              "comment": "Player 2's score is initially placed off-screen, but it's automatically positioned each frame anyway",
-              "comment2": ""
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "AnimationName"
+                      },
+                      "parameters": [
+                        "Player",
+                        "GlobalVariableString(player_2_squibble)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Alignment::RightAlign"
+                      },
+                      "parameters": [
+                        "",
+                        "Score",
+                        "28 * GlobalVariable(grid_size)",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
             }
           ]
         },
@@ -4234,6 +4419,37 @@
                     "i",
                     "+",
                     "GlobalVariable(grid_size)"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "HideLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Player1\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "HideLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Player2\""
                   ],
                   "subInstructions": []
                 }
@@ -4367,6 +4583,86 @@
       ]
     }
   ],
-  "externalLayouts": [],
+  "externalLayouts": [
+    {
+      "associatedLayout": "Game",
+      "name": "Rounds",
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 704,
+          "layer": "Overlay",
+          "locked": false,
+          "name": "BackgroundOverlay",
+          "width": 1472,
+          "x": 224,
+          "y": 224,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Overlay",
+          "locked": false,
+          "name": "RoundsTitle",
+          "width": 0,
+          "x": 320,
+          "y": 320,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Overlay",
+          "locked": false,
+          "name": "Rounds1",
+          "width": 0,
+          "x": 704,
+          "y": 512,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Overlay",
+          "locked": false,
+          "name": "Rounds3",
+          "width": 0,
+          "x": 640,
+          "y": 704,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "editionSettings": {
+        "grid": true,
+        "gridB": 255,
+        "gridG": 180,
+        "gridHeight": 64,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridR": 158,
+        "gridWidth": 64,
+        "snap": true,
+        "windowMask": false,
+        "zoomFactor": 0.4
+      }
+    }
+  ],
   "externalSourceFiles": []
 }
