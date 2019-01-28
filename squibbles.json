@@ -2295,38 +2295,26 @@
       ],
       "variables": [
         {
-          "name": "GridSize",
-          "value": "64"
-        },
-        {
-          "name": "Grid",
+          "name": "grid",
           "children": []
         },
         {
-          "name": "GridCellsX",
-          "value": "30"
-        },
-        {
-          "name": "GridCellsY",
-          "value": "18"
-        },
-        {
-          "name": "Objects",
+          "name": "objects",
           "children": [
             {
-              "name": "Arrows",
+              "name": "arrows",
               "value": "75"
             },
             {
-              "name": "Blocks",
+              "name": "blocks",
               "value": "20"
             },
             {
-              "name": "Coins",
+              "name": "coins",
               "value": "8"
             },
             {
-              "name": "Mysteries",
+              "name": "mysteries",
               "value": "5"
             }
           ]
@@ -2751,7 +2739,7 @@
           "updateIfNotVisible": false,
           "variables": [
             {
-              "name": "Score",
+              "name": "score",
               "value": "0"
             }
           ],
@@ -2930,7 +2918,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "name": "Initial setup",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -3001,7 +2989,7 @@
                   "parameters": [
                     "Score",
                     "=",
-                    "Player.VariableString(Score)"
+                    "Player.VariableString(score)"
                   ],
                   "subInstructions": []
                 }
@@ -3043,12 +3031,13 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "MettreX"
+                        "value": "Alignment::RightAlign"
                       },
                       "parameters": [
+                        "",
                         "Score",
-                        "=",
-                        "(28 * Variable(GridSize)) - Score.Width()"
+                        "28 * GlobalVariable(grid_size)",
+                        ""
                       ],
                       "subInstructions": []
                     }
@@ -3151,7 +3140,7 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::Repeat",
-              "repeatExpression": "Variable(GridCellsX)",
+              "repeatExpression": "GlobalVariable(grid_cells_x)",
               "conditions": [],
               "actions": [
                 {
@@ -3172,7 +3161,7 @@
                   "disabled": false,
                   "folded": false,
                   "type": "BuiltinCommonInstructions::Repeat",
-                  "repeatExpression": "Variable(GridCellsY)",
+                  "repeatExpression": "GlobalVariable(grid_cells_y)",
                   "conditions": [],
                   "actions": [
                     {
@@ -3181,9 +3170,9 @@
                         "value": "ModVarScene"
                       },
                       "parameters": [
-                        "Grid[ToString(Variable(i) + 1)][ToString(Variable(j) + 1)].X",
+                        "grid[ToString(Variable(i) + 1)][ToString(Variable(j) + 1)].x",
                         "=",
-                        "Variable(i)*Variable(GridSize)"
+                        "Variable(i) * GlobalVariable(grid_size)"
                       ],
                       "subInstructions": []
                     },
@@ -3193,9 +3182,9 @@
                         "value": "ModVarScene"
                       },
                       "parameters": [
-                        "Grid[ToString(Variable(i) + 1)][ToString(Variable(j) + 1)].Y",
+                        "grid[ToString(Variable(i) + 1)][ToString(Variable(j) + 1)].y",
                         "=",
-                        "Variable(j)*Variable(GridSize)"
+                        "Variable(j) * GlobalVariable(grid_size)"
                       ],
                       "subInstructions": []
                     },
@@ -3205,7 +3194,7 @@
                         "value": "ModVarSceneTxt"
                       },
                       "parameters": [
-                        "Grid[ToString(Variable(i) + 1)][ToString(Variable(j) + 1)].Object",
+                        "grid[ToString(Variable(i) + 1)][ToString(Variable(j) + 1)].object",
                         "=",
                         "\"\""
                       ],
@@ -3296,7 +3285,7 @@
                     "value": "VarScene"
                   },
                   "parameters": [
-                    "Objects.Blocks",
+                    "objects.blocks",
                     ">",
                     "0"
                   ],
@@ -3313,7 +3302,7 @@
                   "parameters": [
                     "i",
                     "=",
-                    "RandomInRange(1, Variable(GridCellsX))"
+                    "RandomInRange(1, GlobalVariable(grid_cells_x))"
                   ],
                   "subInstructions": []
                 },
@@ -3325,7 +3314,7 @@
                   "parameters": [
                     "j",
                     "=",
-                    "RandomInRange(3, Variable(GridCellsY) - 1)"
+                    "RandomInRange(3, GlobalVariable(grid_cells_y) - 1)"
                   ],
                   "subInstructions": []
                 }
@@ -3342,7 +3331,7 @@
                         "value": "VarSceneTxt"
                       },
                       "parameters": [
-                        "Grid[VariableString(i)][VariableString(j)].Object",
+                        "grid[VariableString(i)][VariableString(j)].object",
                         "=",
                         "\"\""
                       ],
@@ -3358,8 +3347,8 @@
                       "parameters": [
                         "",
                         "Block",
-                        "Variable(Grid[VariableString(i)][VariableString(j)].X)",
-                        "Variable(Grid[VariableString(i)][VariableString(j)].Y)",
+                        "Variable(grid[VariableString(i)][VariableString(j)].x)",
+                        "Variable(grid[VariableString(i)][VariableString(j)].y)",
                         ""
                       ],
                       "subInstructions": []
@@ -3382,7 +3371,7 @@
                         "value": "ModVarSceneTxt"
                       },
                       "parameters": [
-                        "Grid[VariableString(i)][VariableString(j)].Object",
+                        "grid[VariableString(i)][VariableString(j)].object",
                         "=",
                         "\"block\""
                       ],
@@ -3394,7 +3383,7 @@
                         "value": "ModVarScene"
                       },
                       "parameters": [
-                        "Objects.Blocks",
+                        "objects.blocks",
                         "-",
                         "1"
                       ],
@@ -3452,7 +3441,7 @@
                     "value": "VarScene"
                   },
                   "parameters": [
-                    "Objects.Arrows",
+                    "objects.arrows",
                     ">",
                     "0"
                   ],
@@ -3469,7 +3458,7 @@
                   "parameters": [
                     "i",
                     "=",
-                    "RandomInRange(1, Variable(GridCellsX))"
+                    "RandomInRange(1, GlobalVariable(grid_cells_x))"
                   ],
                   "subInstructions": []
                 },
@@ -3481,7 +3470,7 @@
                   "parameters": [
                     "j",
                     "=",
-                    "RandomInRange(3, Variable(GridCellsY) - 1)"
+                    "RandomInRange(3, GlobalVariable(grid_cells_y) - 1)"
                   ],
                   "subInstructions": []
                 }
@@ -3498,7 +3487,7 @@
                         "value": "VarSceneTxt"
                       },
                       "parameters": [
-                        "Grid[VariableString(i)][VariableString(j)].Object",
+                        "grid[VariableString(i)][VariableString(j)].object",
                         "=",
                         "\"\""
                       ],
@@ -3514,8 +3503,8 @@
                       "parameters": [
                         "",
                         "Arrow",
-                        "Variable(Grid[VariableString(i)][VariableString(j)].X)",
-                        "Variable(Grid[VariableString(i)][VariableString(j)].Y)",
+                        "Variable(grid[VariableString(i)][VariableString(j)].x)",
+                        "Variable(grid[VariableString(i)][VariableString(j)].y)",
                         ""
                       ],
                       "subInstructions": []
@@ -3561,7 +3550,7 @@
                         "value": "ModVarSceneTxt"
                       },
                       "parameters": [
-                        "Grid[VariableString(i)][VariableString(j)].Object",
+                        "grid[VariableString(i)][VariableString(j)].object",
                         "=",
                         "\"arrow\""
                       ],
@@ -3573,7 +3562,7 @@
                         "value": "ModVarScene"
                       },
                       "parameters": [
-                        "Objects.Arrows",
+                        "objects.arrows",
                         "-",
                         "1"
                       ],
@@ -3631,7 +3620,7 @@
                     "value": "VarScene"
                   },
                   "parameters": [
-                    "Objects.Coins",
+                    "objects.coins",
                     ">",
                     "0"
                   ],
@@ -3648,7 +3637,7 @@
                   "parameters": [
                     "i",
                     "=",
-                    "RandomInRange(1, Variable(GridCellsX))"
+                    "RandomInRange(1, GlobalVariable(grid_cells_x))"
                   ],
                   "subInstructions": []
                 },
@@ -3660,7 +3649,7 @@
                   "parameters": [
                     "j",
                     "=",
-                    "RandomInRange(3, Variable(GridCellsY) - 1)"
+                    "RandomInRange(3, GlobalVariable(grid_cells_y) - 1)"
                   ],
                   "subInstructions": []
                 }
@@ -3677,7 +3666,7 @@
                         "value": "VarSceneTxt"
                       },
                       "parameters": [
-                        "Grid[VariableString(i)][VariableString(j)].Object",
+                        "grid[VariableString(i)][VariableString(j)].object",
                         "=",
                         "\"\""
                       ],
@@ -3693,8 +3682,8 @@
                       "parameters": [
                         "",
                         "Coin",
-                        "Variable(Grid[VariableString(i)][VariableString(j)].X)",
-                        "Variable(Grid[VariableString(i)][VariableString(j)].Y)",
+                        "Variable(grid[VariableString(i)][VariableString(j)].x)",
+                        "Variable(grid[VariableString(i)][VariableString(j)].y)",
                         ""
                       ],
                       "subInstructions": []
@@ -3717,7 +3706,7 @@
                         "value": "ModVarSceneTxt"
                       },
                       "parameters": [
-                        "Grid[VariableString(i)][VariableString(j)].Object",
+                        "grid[VariableString(i)][VariableString(j)].object",
                         "=",
                         "\"coin\""
                       ],
@@ -3729,7 +3718,7 @@
                         "value": "ModVarScene"
                       },
                       "parameters": [
-                        "Objects.Coins",
+                        "objects.coins",
                         "-",
                         "1"
                       ],
@@ -3787,7 +3776,7 @@
                     "value": "VarScene"
                   },
                   "parameters": [
-                    "Objects.Mysteries",
+                    "objects.mysteries",
                     ">",
                     "0"
                   ],
@@ -3804,7 +3793,7 @@
                   "parameters": [
                     "i",
                     "=",
-                    "RandomInRange(1, Variable(GridCellsX))"
+                    "RandomInRange(1, GlobalVariable(grid_cells_x))"
                   ],
                   "subInstructions": []
                 },
@@ -3816,7 +3805,7 @@
                   "parameters": [
                     "j",
                     "=",
-                    "RandomInRange(3, Variable(GridCellsY) - 1)"
+                    "RandomInRange(3, GlobalVariable(grid_cells_y) - 1)"
                   ],
                   "subInstructions": []
                 }
@@ -3833,7 +3822,7 @@
                         "value": "VarSceneTxt"
                       },
                       "parameters": [
-                        "Grid[VariableString(i)][VariableString(j)].Object",
+                        "grid[VariableString(i)][VariableString(j)].object",
                         "=",
                         "\"\""
                       ],
@@ -3849,8 +3838,8 @@
                       "parameters": [
                         "",
                         "Mystery",
-                        "Variable(Grid[VariableString(i)][VariableString(j)].X)",
-                        "Variable(Grid[VariableString(i)][VariableString(j)].Y)",
+                        "Variable(grid[VariableString(i)][VariableString(j)].x)",
+                        "Variable(grid[VariableString(i)][VariableString(j)].y)",
                         ""
                       ],
                       "subInstructions": []
@@ -3873,7 +3862,7 @@
                         "value": "ModVarSceneTxt"
                       },
                       "parameters": [
-                        "Grid[VariableString(i)][VariableString(j)].Object",
+                        "grid[VariableString(i)][VariableString(j)].object",
                         "=",
                         "\"mystery\""
                       ],
@@ -3885,7 +3874,7 @@
                         "value": "ModVarScene"
                       },
                       "parameters": [
-                        "Objects.Mysteries",
+                        "objects.mysteries",
                         "-",
                         "1"
                       ],
@@ -4103,7 +4092,7 @@
                   "parameters": [
                     "",
                     "Score",
-                    "Player.X() + (1.5 * Variable(GridSize))",
+                    "Player.X() + (1.5 * GlobalVariable(grid_size))",
                     "Player.Y()",
                     "\"\""
                   ],
@@ -4170,7 +4159,7 @@
         },
         {
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -4319,6 +4308,56 @@
               "defaultValue": "",
               "description": "Y position",
               "name": "YPosition",
+              "optional": false,
+              "supplementaryInformation": "",
+              "type": "expression"
+            }
+          ]
+        },
+        {
+          "description": "Right-align an object at a given X position.",
+          "fullName": "Right-align an object",
+          "functionType": "Action",
+          "name": "RightAlign",
+          "sentence": "Right-align _PARAM1_ at X position _PARAM2_",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreX"
+                  },
+                  "parameters": [
+                    "Object",
+                    "=",
+                    "GetArgumentAsNumber(\"XPosition\") - Object.Width()"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": [
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "Object",
+              "name": "Object",
+              "optional": false,
+              "supplementaryInformation": "",
+              "type": "objectList"
+            },
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "X position",
+              "name": "XPosition",
               "optional": false,
               "supplementaryInformation": "",
               "type": "expression"
