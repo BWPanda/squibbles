@@ -2964,6 +2964,24 @@
         {
           "bold": false,
           "italic": false,
+          "name": "FirstPlayerTitle",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Randomly deciding who will go first...",
+          "font": "assets/fonts/luckiest-guy.ttf",
+          "characterSize": 60,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
           "name": "RoundsTitle",
           "smoothed": true,
           "type": "TextObject::Text",
@@ -3170,18 +3188,24 @@
         },
         {
           "name": "Player1",
-          "visibility": true,
+          "visibility": false,
           "cameras": [],
           "effects": []
         },
         {
           "name": "Player2",
-          "visibility": true,
+          "visibility": false,
           "cameras": [],
           "effects": []
         },
         {
           "name": "Rounds",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        },
+        {
+          "name": "FirstPlayer",
           "visibility": true,
           "cameras": [],
           "effects": []
@@ -4468,7 +4492,7 @@
             },
             {
               "disabled": false,
-              "folded": false,
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [],
               "actions": [
@@ -4482,6 +4506,17 @@
                     "\"Rounds\"",
                     "0",
                     "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ShowLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Rounds\""
                   ],
                   "subInstructions": []
                 }
@@ -4531,7 +4566,7 @@
           "comment2": ""
         },
         {
-          "disabled": true,
+          "disabled": false,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -4551,10 +4586,9 @@
           "events": [
             {
               "disabled": false,
-              "folded": false,
-              "infiniteLoopWarning": true,
-              "type": "BuiltinCommonInstructions::While",
-              "whileConditions": [
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
                 {
                   "type": {
                     "inverted": false,
@@ -4565,9 +4599,19 @@
                     "\"Overlay\""
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SourisBouton"
+                  },
+                  "parameters": [
+                    "",
+                    "Left"
+                  ],
+                  "subInstructions": []
                 }
               ],
-              "conditions": [],
               "actions": [],
               "events": [
                 {
@@ -4575,17 +4619,6 @@
                   "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SourisBouton"
-                      },
-                      "parameters": [
-                        "",
-                        "Left"
-                      ],
-                      "subInstructions": []
-                    },
                     {
                       "type": {
                         "inverted": false,
@@ -4644,17 +4677,6 @@
                   "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SourisBouton"
-                      },
-                      "parameters": [
-                        "",
-                        "Left"
-                      ],
-                      "subInstructions": []
-                    },
                     {
                       "type": {
                         "inverted": false,
@@ -4886,6 +4908,55 @@
     }
   ],
   "externalLayouts": [
+    {
+      "associatedLayout": "Game",
+      "name": "FirstPlayer",
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 704,
+          "layer": "FirstPlayer",
+          "locked": false,
+          "name": "BackgroundOverlay",
+          "width": 1472,
+          "x": 224,
+          "y": 224,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "FirstPlayer",
+          "locked": false,
+          "name": "FirstPlayerTitle",
+          "width": 0,
+          "x": 384,
+          "y": 320,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "editionSettings": {
+        "grid": true,
+        "gridB": 255,
+        "gridG": 180,
+        "gridHeight": 64,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridR": 158,
+        "gridWidth": 64,
+        "snap": true,
+        "windowMask": false,
+        "zoomFactor": 0.4
+      }
+    },
     {
       "associatedLayout": "Game",
       "name": "Rounds",
