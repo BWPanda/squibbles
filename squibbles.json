@@ -1,7 +1,7 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 97,
+    "build": 98,
     "major": 4,
     "minor": 0,
     "revision": 0
@@ -14,6 +14,7 @@
     "orientation": "default",
     "packageName": "au.id.panda.squibbles",
     "projectFile": "/home/panda/GDevelop projects/Squibbles/squibbles.json",
+    "scaleMode": "linear",
     "sizeOnStartupMode": "",
     "useExternalSourceFiles": false,
     "version": "1.0.0",
@@ -210,15 +211,6 @@
         "kind": "image",
         "metadata": "",
         "name": "assets/sprites/grass.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/sprites/mystery.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/sprites/mystery.png",
         "smoothed": true,
         "userAdded": false
       },
@@ -541,6 +533,15 @@
         "name": "assets/backgrounds/overlay.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/teleport.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/teleport.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -2352,7 +2353,7 @@
               "value": "8"
             },
             {
-              "name": "mysteries",
+              "name": "teleports",
               "value": "5"
             }
           ]
@@ -2677,7 +2678,7 @@
           ]
         },
         {
-          "name": "Mystery",
+          "name": "Teleport",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
@@ -2693,7 +2694,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "assets/sprites/mystery.png",
+                      "image": "assets/sprites/teleport.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -3873,7 +3874,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Add mysteries",
+          "comment": "Add teleports",
           "comment2": ""
         },
         {
@@ -3906,7 +3907,7 @@
                     "value": "VarScene"
                   },
                   "parameters": [
-                    "objects.mysteries",
+                    "objects.teleports",
                     ">",
                     "0"
                   ],
@@ -3967,7 +3968,7 @@
                       },
                       "parameters": [
                         "",
-                        "Mystery",
+                        "Teleport",
                         "Variable(grid[VariableString(i)][VariableString(j)].x)",
                         "Variable(grid[VariableString(i)][VariableString(j)].y)",
                         ""
@@ -3980,7 +3981,7 @@
                         "value": "ChangePlan"
                       },
                       "parameters": [
-                        "Mystery",
+                        "Teleport",
                         "=",
                         "6"
                       ],
@@ -3994,7 +3995,7 @@
                       "parameters": [
                         "grid[VariableString(i)][VariableString(j)].object",
                         "=",
-                        "\"mystery\""
+                        "\"teleport\""
                       ],
                       "subInstructions": []
                     },
@@ -4004,7 +4005,7 @@
                         "value": "ModVarScene"
                       },
                       "parameters": [
-                        "objects.mysteries",
+                        "objects.teleports",
                         "-",
                         "1"
                       ],
